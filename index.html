@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandia.pro - Tienda Oficial</title>
+    <title>SandiaSV - Tienda Oficial</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -38,7 +38,7 @@
         .circle {
             position: absolute;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(255, 193, 7, 0.15), transparent 70%);
+            background: radial-gradient(circle, rgba(244, 67, 54, 0.15), transparent 70%);
             animation: float 15s infinite linear;
             filter: blur(5px);
         }
@@ -54,7 +54,7 @@
         
         /* Header */
         .header {
-            background: rgba(255, 193, 7, 0.95);
+            background: rgba(46, 125, 50, 0.95);
             color: white;
             padding: 15px 0;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -78,12 +78,12 @@
             font-weight: bold;
             display: flex;
             align-items: center;
-            color: #5d4037;
+            color: white;
         }
         
         .logo i {
             margin-right: 10px;
-            color: #ff9800;
+            color: #f44336;
         }
         
         .header-right {
@@ -95,7 +95,7 @@
         .currency-selector {
             background: rgba(255, 255, 255, 0.3);
             border: none;
-            color: #5d4037;
+            color: #2e7d32;
             padding: 10px 15px;
             border-radius: 30px;
             cursor: pointer;
@@ -126,13 +126,13 @@
         
         .currency-option {
             padding: 12px 15px;
-            color: #5d4037;
+            color: #2e7d32;
             cursor: pointer;
             transition: background-color 0.2s;
         }
         
         .currency-option:hover {
-            background-color: #fff8e1;
+            background-color: #e8f5e9;
         }
         
         .currency-selector:hover .currency-options {
@@ -156,14 +156,14 @@
         
         .welcome-section h1 {
             font-size: 3.5rem;
-            color: #ff9800;
+            color: #f44336;
             margin-bottom: 20px;
             text-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         
         .welcome-section p {
             font-size: 1.2rem;
-            color: #5d4037;
+            color: #2e7d32;
             max-width: 800px;
             margin: 0 auto;
             line-height: 1.8;
@@ -182,7 +182,7 @@
             padding: 30px;
             color: #333;
             backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 193, 7, 0.15);
+            border: 1px solid rgba(76, 175, 80, 0.15);
             transition: transform 0.3s, box-shadow 0.3s;
         }
         
@@ -192,10 +192,10 @@
         }
         
         .section-title {
-            color: #ff9800;
+            color: #f44336;
             margin-bottom: 25px;
             padding-bottom: 15px;
-            border-bottom: 2px solid #ffecb3;
+            border-bottom: 2px solid #c8e6c9;
             font-size: 28px;
             font-weight: 600;
             position: relative;
@@ -208,24 +208,24 @@
             left: 0;
             width: 80px;
             height: 3px;
-            background: #ff9800;
+            background: #f44336;
             border-radius: 3px;
         }
         
         .categories-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             margin-top: 15px;
         }
         
         .category-card {
-            background: linear-gradient(135deg, rgba(255, 248, 225, 0.8) 0%, rgba(255, 241, 204, 0.8) 100%);
+            background: linear-gradient(135deg, rgba(232, 245, 233, 0.8) 0%, rgba(200, 230, 201, 0.8) 100%);
             border-radius: 12px;
             padding: 25px 20px;
             text-align: center;
             transition: all 0.3s;
-            border: 1px solid #ffecb3;
+            border: 1px solid #c8e6c9;
             position: relative;
             overflow: hidden;
             cursor: pointer;
@@ -233,8 +233,8 @@
         
         .category-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 10px 25px rgba(255, 152, 0, 0.2);
-            border-color: #ff9800;
+            box-shadow: 0 10px 25px rgba(244, 67, 54, 0.2);
+            border-color: #f44336;
         }
         
         .category-card::before {
@@ -244,36 +244,36 @@
             left: 0;
             width: 100%;
             height: 5px;
-            background: linear-gradient(to right, #ff9800, #ff5722);
+            background: linear-gradient(to right, #f44336, #ff9800);
         }
         
         .category-title {
             font-weight: 600;
             margin: 15px 0 8px;
-            color: #5d4037;
+            color: #2e7d32;
             font-size: 20px;
         }
         
         .category-desc {
-            color: #795548;
+            color: #388e3c;
             font-size: 15px;
             line-height: 1.5;
         }
         
         .category-icon {
             font-size: 36px;
-            color: #ff9800;
+            color: #f44336;
             margin-bottom: 15px;
         }
         
         .important-note {
-            background-color: #fff8e1;
-            border-left: 4px solid #ffc107;
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
             padding: 20px;
             margin: 25px 0;
             border-radius: 8px;
             font-weight: 500;
-            color: #5d4037;
+            color: #b71c1c;
             display: flex;
             align-items: center;
         }
@@ -281,23 +281,23 @@
         .important-note i {
             margin-right: 15px;
             font-size: 24px;
-            color: #ff9800;
+            color: #f44336;
         }
         
         .ip-display {
-            background: linear-gradient(135deg, #ffecb3 0%, #ffe082 100%);
+            background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%);
             border-radius: 12px;
             padding: 25px;
             text-align: center;
             margin: 30px 0;
-            border: 2px dashed #ff9800;
+            border: 2px dashed #4caf50;
             font-size: 22px;
             font-weight: 600;
-            color: #5d4037;
+            color: #1b5e20;
         }
         
         .ip-display strong {
-            color: #ff5722;
+            color: #f44336;
             font-size: 26px;
             letter-spacing: 1px;
         }
@@ -320,7 +320,7 @@
         }
         
         .contact-btn {
-            background: linear-gradient(to right, #ff9800, #ff5722);
+            background: linear-gradient(to right, #f44336, #ff9800);
             color: white;
             border: none;
             padding: 16px 30px;
@@ -333,12 +333,12 @@
             gap: 15px;
             font-size: 18px;
             transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
+            box-shadow: 0 4px 15px rgba(244, 67, 54, 0.3);
         }
         
         .contact-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(255, 87, 34, 0.4);
+            box-shadow: 0 6px 20px rgba(244, 67, 54, 0.4);
         }
         
         .contact-btn i {
@@ -346,7 +346,7 @@
         }
         
         .footer {
-            background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+            background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
             color: white;
             text-align: center;
             padding: 50px 20px 30px;
@@ -362,7 +362,7 @@
             left: 0;
             width: 100%;
             height: 60px;
-            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ff9800' fill-opacity='1' d='M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,170.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%232e7d32' fill-opacity='1' d='M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,170.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
             background-size: cover;
             background-position: center;
         }
@@ -410,32 +410,145 @@
         
         /* Modalidad destacada */
         .featured-game {
-            background: linear-gradient(135deg, rgba(255, 248, 225, 0.9) 0%, rgba(255, 241, 204, 0.9) 100%);
+            background: linear-gradient(135deg, rgba(232, 245, 233, 0.9) 0%, rgba(200, 230, 201, 0.9) 100%);
             border-radius: 16px;
             padding: 25px;
             margin: 25px 0;
-            border: 2px solid #ffd54f;
+            border: 2px solid #4caf50;
             display: flex;
             align-items: center;
         }
         
         .game-icon {
             font-size: 48px;
-            color: #ff9800;
+            color: #f44336;
             margin-right: 20px;
             min-width: 70px;
             text-align: center;
         }
         
         .game-content h3 {
-            color: #5d4037;
+            color: #2e7d32;
             font-size: 24px;
             margin-bottom: 10px;
         }
         
         .game-content p {
-            color: #795548;
+            color: #388e3c;
             line-height: 1.6;
+        }
+        
+        /* Modales */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+            width: 90%;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+            transform: translateY(30px);
+            opacity: 0;
+            transition: all 0.4s ease;
+        }
+        
+        .modal-overlay.active .modal {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .modal-header {
+            background: linear-gradient(to right, #f44336, #ff9800);
+            color: white;
+            padding: 20px;
+            border-radius: 16px 16px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .modal-title {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        .modal-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .modal-close:hover {
+            transform: rotate(90deg);
+        }
+        
+        .modal-content {
+            padding: 30px;
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        .modal-content h3 {
+            color: #f44336;
+            margin: 20px 0 15px;
+            font-size: 20px;
+        }
+        
+        .modal-content p {
+            margin-bottom: 15px;
+        }
+        
+        .modal-content a {
+            color: #2196f3;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .modal-content a:hover {
+            color: #f44336;
+            text-decoration: underline;
+        }
+        
+        .modal-content ul {
+            margin: 20px 0 20px 30px;
+            color: #2e7d32;
+        }
+        
+        .modal-content li {
+            margin-bottom: 12px;
+        }
+        
+        .modal-content .highlight {
+            background: #fff8e1;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
         }
         
         /* Responsive */
@@ -445,7 +558,7 @@
             }
             
             .categories-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
             }
         }
         
@@ -476,6 +589,10 @@
                 margin-right: 0;
                 margin-bottom: 15px;
             }
+            
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -488,7 +605,7 @@
         <div class="header-container">
             <div class="logo">
                 <i class="fas fa-watermelon"></i>
-                SANDIA.PRO
+                SANDIA
             </div>
             
             <div class="header-right">
@@ -512,7 +629,7 @@
     <!-- Main Content -->
     <main class="main-container">
         <div class="welcome-section">
-            <h1>¡Bienvenido a Sandia.pro!</h1>
+            <h1>¡Bienvenido a Sandia!</h1>
             <p>Tu servidor de Minecraft con la mejor experiencia Towny. Únete a nuestra comunidad y disfruta construyendo tu propia ciudad.</p>
         </div>
         
@@ -523,40 +640,33 @@
                     <h2 class="section-title">¡Infórmate!</h2>
                     
                     <div class="categories-grid">
-                        <div class="category-card">
+                        <div class="category-card" id="infoBtn">
                             <div class="category-icon">
                                 <i class="fas fa-info-circle"></i>
                             </div>
                             <h3 class="category-title">INFORMACIÓN</h3>
-                            <p class="category-desc">Todo lo que necesitas saber antes de unirte al servidor</p>
+                            <p class="category-desc">Todo lo que necesitas saber antes de unirte</p>
                         </div>
-                        <div class="category-card">
+                        <div class="category-card" id="ranksBtn">
                             <div class="category-icon">
                                 <i class="fas fa-crown"></i>
                             </div>
                             <h3 class="category-title">RANGOS PREMIUMS</h3>
                             <p class="category-desc">Beneficios exclusivos para jugadores destacados</p>
                         </div>
-                        <div class="category-card">
+                        <div class="category-card" id="socialBtn">
                             <div class="category-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <h3 class="category-title">TUTORIAL</h3>
-                            <p class="category-desc">Aprende a jugar y dominar la modalidad Towny</p>
-                        </div>
-                        <div class="category-card">
-                            <div class="category-icon">
-                                <i class="fas fa-hashtag"></i>
+                                <i class="fab fa-tiktok"></i>
                             </div>
                             <h3 class="category-title">REDES SOCIALES</h3>
-                            <p class="category-desc">Síguenos y mantente actualizado con las novedades</p>
+                            <p class="category-desc">Síguenos en TikTok para novedades</p>
                         </div>
                     </div>
                 </section>
                 
                 <section class="section">
                     <h2 class="section-title">Sobre nosotros</h2>
-                    <p>Sandia.pro es un servidor de Minecraft especializado en la modalidad Towny. Construye tu ciudad, forma alianzas y compite por ser el mejor alcalde del servidor.</p>
+                    <p>Sandia es un servidor de Minecraft especializado en la modalidad Towny. Construye tu ciudad, forma alianzas y compite por ser el mejor alcalde.</p>
                     
                     <div class="important-note">
                         <i class="fas fa-exclamation-triangle"></i>
@@ -615,21 +725,90 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="social-icons">
-            <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@omaruchan9" target="_blank" class="social-icon">
+                <i class="fab fa-tiktok"></i>
+            </a>
         </div>
         
-        <p class="footer-text">Sandia.pro es un servidor de Minecraft especializado en la modalidad Towny, ofreciendo la mejor experiencia de construcción y estrategia.</p>
+        <p class="footer-text">Sandia es un servidor de Minecraft especializado en la modalidad Towny, ofreciendo la mejor experiencia de construcción y estrategia.</p>
         
         <p class="footer-text">Conéctate hoy mismo a <strong>Sandia.pro</strong> y únete a nuestra comunidad de constructores.</p>
         
         <p class="copyright">
-            Sandia.pro no está afiliado de ninguna manera con Mojang Studios.<br>
+            Sandia no está afiliado de ninguna manera con Mojang Studios.<br>
             Minecraft es una marca registrada de Mojang AB.
         </p>
     </footer>
+    
+    <!-- Modales -->
+    <div class="modal-overlay" id="infoModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">INFORMACIÓN | SandíaSV</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-content">
+                <h3>¡Bienvenido a la web oficial de Sandía!</h3>
+                <p>Este servidor, se dedica principalmente en el entretenimiento gracias a su discord y a su comunidad en el servidor de minecraft, si quisieras unirte a alguno de estos dos servidores, aquí tienes el enlace:</p>
+                
+                <div class="highlight">
+                    <p><strong>Discord:</strong> <a href="https://discord.gg/Tq9AeG5TC2" target="_blank">https://discord.gg/Tq9AeG5TC2</a></p>
+                    <p><strong>Servidor:</strong> IP Minecraft (Java): Sandia.pro</p>
+                    <p style="padding-left: 30px;">IP Minecraft (Bedrock): Sandia.pro Puerto: 19132</p>
+                </div>
+                
+                <p>¡Si tienes alguna pregunta no dudes en comentársela a nuestros staffs en el discord!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal-overlay" id="ranksModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">RANGOS PREMIUMS | SandíaSV</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-content">
+                <h3>¡Los mejores rangos del servidor!</h3>
+                <p>Estos son los siguientes rangos actualmente en el servidor:</p>
+                
+                <ul>
+                    <li><strong>VIP:</strong> 3 USD (Beneficios en el Discord)</li>
+                    <li><strong>VIP+:</strong> 7 USD (Beneficios en el Discord)</li>
+                    <li><strong>Master:</strong> 15 USD (Beneficios en el discord)</li>
+                </ul>
+                
+                <div class="highlight">
+                    <p>Todos estos rangos se adquieren en el perfil de tiktok de Omaruchan comprando una suscripción.</p>
+                    <p><strong>Enlace a Tiktok:</strong> <a href="https://www.tiktok.com/@omaruchan9" target="_blank">https://www.tiktok.com/@omaruchan9</a></p>
+                </div>
+                
+                <p>Por varios motivos, el rango no te lo da al instante por lo que tienes que reclamarlo primero en el discord del servidor.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal-overlay" id="socialModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">REDES SOCIALES | SandíaSV</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-content">
+                <div style="text-align: center; margin-bottom: 25px;">
+                    <i class="fab fa-tiktok" style="font-size: 64px; color: #000;"></i>
+                </div>
+                <h3 style="text-align: center;">¡Síguenos en TikTok!</h3>
+                <p style="text-align: center;">Mantente al día con las últimas novedades, eventos y actualizaciones:</p>
+                
+                <div class="highlight" style="text-align: center;">
+                    <p style="margin: 0;"><strong>Perfil Oficial:</strong> <a href="https://www.tiktok.com/@omaruchan9" target="_blank">@omaruchan9</a></p>
+                </div>
+                
+                <p style="text-align: center; margin-top: 25px;">¡Participa en nuestros concursos y eventos exclusivos para seguidores!</p>
+            </div>
+        </div>
+    </div>
     
     <script>
         // Selector de moneda
@@ -656,7 +835,7 @@
         categoryCards.forEach(card => {
             card.addEventListener('mouseenter', () => {
                 card.style.transform = 'translateY(-8px)';
-                card.style.boxShadow = '0 15px 30px rgba(255, 152, 0, 0.25)';
+                card.style.boxShadow = '0 15px 30px rgba(244, 67, 54, 0.25)';
             });
             
             card.addEventListener('mouseleave', () => {
@@ -667,7 +846,7 @@
         
         // Crear círculos flotantes para el fondo
         const floatingCircles = document.getElementById('floatingCircles');
-        const colors = ['rgba(255, 193, 7, 0.15)', 'rgba(255, 152, 0, 0.12)', 'rgba(255, 183, 77, 0.18)'];
+        const colors = ['rgba(244, 67, 54, 0.15)', 'rgba(255, 152, 0, 0.12)', 'rgba(255, 87, 34, 0.18)'];
         
         for (let i = 0; i < 12; i++) {
             const circle = document.createElement('div');
@@ -709,6 +888,57 @@
                     }, 100);
                 }, index * 150);
             });
+        });
+        
+        // Funcionalidad de los modales
+        const infoBtn = document.getElementById('infoBtn');
+        const ranksBtn = document.getElementById('ranksBtn');
+        const socialBtn = document.getElementById('socialBtn');
+        
+        const infoModal = document.getElementById('infoModal');
+        const ranksModal = document.getElementById('ranksModal');
+        const socialModal = document.getElementById('socialModal');
+        
+        const modalCloses = document.querySelectorAll('.modal-close');
+        
+        // Abrir modales
+        infoBtn.addEventListener('click', () => {
+            infoModal.classList.add('active');
+        });
+        
+        ranksBtn.addEventListener('click', () => {
+            ranksModal.classList.add('active');
+        });
+        
+        socialBtn.addEventListener('click', () => {
+            socialModal.classList.add('active');
+        });
+        
+        // Cerrar modales
+        modalCloses.forEach(closeBtn => {
+            closeBtn.addEventListener('click', () => {
+                document.querySelectorAll('.modal-overlay').forEach(modal => {
+                    modal.classList.remove('active');
+                });
+            });
+        });
+        
+        // Cerrar al hacer clic fuera del modal
+        document.querySelectorAll('.modal-overlay').forEach(overlay => {
+            overlay.addEventListener('click', (e) => {
+                if (e.target === overlay) {
+                    overlay.classList.remove('active');
+                }
+            });
+        });
+        
+        // Cerrar con tecla ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal-overlay').forEach(modal => {
+                    modal.classList.remove('active');
+                });
+            }
         });
     </script>
 </body>
